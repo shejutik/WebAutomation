@@ -1,0 +1,4 @@
+com\shejuti\utils\ConfigReader.class
+com\shejuti\base\BaseTest.class
+com\shejuti\pages\LoginPage.class
+com\shejuti\tests\LoginTest.class
