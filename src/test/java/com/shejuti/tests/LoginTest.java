@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 import com.shejuti.base.BaseTest;
 import com.shejuti.pages.LoginPage;
 import com.shejuti.utils.ConfigReader;
+import com.shejuti.utils.WaitUtils;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
@@ -12,10 +13,16 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import java.time.Duration;
 
+/**
+ * Contains Test cases on Login screen
+ * This class extends the BaseTest class.
+ */
+
 public class LoginTest extends BaseTest {
 
 	String testingDemoLoginUrl = ConfigReader.get("baseUrl") + "/testingdemologin";
 	String testingDemoUrl = ConfigReader.get("baseUrl") + "/testingdemo";
+	private By testingDemoHeader = By.xpath("//h2[text()='Testing Demo']");
 
     @Test
     public void testInvalidLoginShowsErrorMessage() {
@@ -26,9 +33,7 @@ public class LoginTest extends BaseTest {
         LoginPage loginPage = new LoginPage(driver);
 
         // Use invalid credentials
-        loginPage.enterUsername("wronguser");
-        loginPage.enterPassword("wrongpass");
-        loginPage.clickLogin();
+        loginPage.login("wronguser", "wrongpass");
 
         // Define locator for error message
         By errorMsgLocator = By.xpath("//p[contains(text(),'Invalid credentials')]");
@@ -50,12 +55,10 @@ public class LoginTest extends BaseTest {
         LoginPage loginPage = new LoginPage(driver);
 
         // Perform login with valid credentials
-        loginPage.enterUsername("admin");
-        loginPage.enterPassword("123");
-        loginPage.clickLogin();
+        loginPage.login("admin", "123");
 
         // Validate navigation or presence of some element after login
-//        String expectedUrl = "http://localhost:3000/TestingDemo";
+        WaitUtils.waitUntilVisible(driver, testingDemoHeader, 10);
         Assert.assertEquals(driver.getCurrentUrl(), testingDemoUrl, "Login failed or redirection incorrect.");
     }
 }

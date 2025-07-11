@@ -1,10 +1,12 @@
 package com.shejuti.pages; 
 
 import org.openqa.selenium.By;
+
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import org.testng.Assert;
+import com.shejuti.utils.WaitUtils;
 
 /**
  * Page Object Model for the Login Page 
@@ -41,6 +43,7 @@ public class LoginPage {
 
     // Click the login button
     public void clickLogin() {
+    	WaitUtils.waitUntilClickable(driver, loginButton, 10);
         driver.findElement(loginButton).click();
     }
 
@@ -49,12 +52,6 @@ public class LoginPage {
         enterUsername(username);
         enterPassword(password);
         clickLogin();
-    }
-
-    // Optional: Method to verify login success (e.g., check for accessed url)
-    public boolean isLoginSuccessful() {
-        
-        return driver.getCurrentUrl().contains("/testingdemo");
     }
     
  // Method to return error message text

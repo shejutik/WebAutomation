@@ -30,8 +30,9 @@ public abstract class BaseTest {
         driver = new ChromeDriver(); // Launches a new Chrome browser instance
         driver.manage().window().maximize(); // Maximizes the browser window
 
-        // Sets a global implicit wait of 10 seconds
-        driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+        // Sets a global implicit wait of 10 seconds for all findElement and findElements calls before throwing a NoSuchElementException
+        // Not using implicit wait as using explicit wait where needed from WaitUtils.java class
+        // driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
         // Loads your locally hosted testing website (React frontend)
         driver.get(ConfigReader.get("baseUrl"));
