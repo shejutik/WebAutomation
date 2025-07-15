@@ -2,32 +2,32 @@
 <testng-results ignored="0" total="2" passed="2" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-11T14:09:49 AEST" name="Portfolio Test Suite" finished-at="2025-07-11T14:09:53 AEST" duration-ms="4048">
+  <suite started-at="2025-07-15T12:00:25 AEST" name="Portfolio Test Suite" finished-at="2025-07-15T12:00:30 AEST" duration-ms="5295">
     <groups>
     </groups>
-    <test started-at="2025-07-11T14:09:49 AEST" name="Login Tests" finished-at="2025-07-11T14:09:53 AEST" duration-ms="4048">
+    <test started-at="2025-07-15T12:00:25 AEST" name="Login Tests" finished-at="2025-07-15T12:00:30 AEST" duration-ms="5295">
       <class name="com.shejuti.tests.LoginTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.shejuti.tests.LoginTest@3857f613]" started-at="2025-07-11T14:09:49 AEST" name="setUp" finished-at="2025-07-11T14:09:50 AEST" duration-ms="1804" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.shejuti.tests.LoginTest@3857f613]" started-at="2025-07-15T12:00:25 AEST" name="setUp" finished-at="2025-07-15T12:00:28 AEST" duration-ms="3031" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testInvalidLoginShowsErrorMessage()[pri:0, instance:com.shejuti.tests.LoginTest@3857f613]" started-at="2025-07-11T14:09:50 AEST" name="testInvalidLoginShowsErrorMessage" finished-at="2025-07-11T14:09:51 AEST" duration-ms="302" status="PASS">
+        <test-method signature="testInvalidLoginShowsErrorMessage()[pri:0, instance:com.shejuti.tests.LoginTest@3857f613]" started-at="2025-07-15T12:00:28 AEST" name="testInvalidLoginShowsErrorMessage" finished-at="2025-07-15T12:00:28 AEST" duration-ms="305" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInvalidLoginShowsErrorMessage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.shejuti.tests.LoginTest@3857f613]" started-at="2025-07-11T14:09:51 AEST" name="tearDown" finished-at="2025-07-11T14:09:51 AEST" duration-ms="163" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.shejuti.tests.LoginTest@3857f613]" started-at="2025-07-15T12:00:28 AEST" name="tearDown" finished-at="2025-07-15T12:00:28 AEST" duration-ms="132" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.shejuti.tests.LoginTest@3857f613]" started-at="2025-07-11T14:09:51 AEST" name="setUp" finished-at="2025-07-11T14:09:52 AEST" duration-ms="1340" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.shejuti.tests.LoginTest@3857f613]" started-at="2025-07-15T12:00:28 AEST" name="setUp" finished-at="2025-07-15T12:00:29 AEST" duration-ms="1331" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testValidLogin()[pri:0, instance:com.shejuti.tests.LoginTest@3857f613]" started-at="2025-07-11T14:09:52 AEST" name="testValidLogin" finished-at="2025-07-11T14:09:53 AEST" duration-ms="296" status="PASS">
+        <test-method signature="testValidLogin()[pri:0, instance:com.shejuti.tests.LoginTest@3857f613]" started-at="2025-07-15T12:00:29 AEST" name="testValidLogin" finished-at="2025-07-15T12:00:30 AEST" duration-ms="311" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.shejuti.tests.LoginTest@3857f613]" started-at="2025-07-11T14:09:53 AEST" name="tearDown" finished-at="2025-07-11T14:09:53 AEST" duration-ms="114" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.shejuti.tests.LoginTest@3857f613]" started-at="2025-07-15T12:00:30 AEST" name="tearDown" finished-at="2025-07-15T12:00:30 AEST" duration-ms="154" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

@@ -1,4 +1,15 @@
 D:\Work\Web Testing\Web_AutomationProject\src\test\java\com\shejuti\base\BaseTest.java
+D:\Work\Web Testing\Web_AutomationProject\src\test\java\com\shejuti\pages\AboutPage.java
+D:\Work\Web Testing\Web_AutomationProject\src\test\java\com\shejuti\pages\ContactPage.java
+D:\Work\Web Testing\Web_AutomationProject\src\test\java\com\shejuti\pages\HomePage.java
 D:\Work\Web Testing\Web_AutomationProject\src\test\java\com\shejuti\pages\LoginPage.java
+D:\Work\Web Testing\Web_AutomationProject\src\test\java\com\shejuti\pages\ProjectsPage.java
+D:\Work\Web Testing\Web_AutomationProject\src\test\java\com\shejuti\pages\TestingDemoPage.java
+D:\Work\Web Testing\Web_AutomationProject\src\test\java\com\shejuti\tests\AboutTest.java
+D:\Work\Web Testing\Web_AutomationProject\src\test\java\com\shejuti\tests\ContactTest.java
+D:\Work\Web Testing\Web_AutomationProject\src\test\java\com\shejuti\tests\HomeTest.java
 D:\Work\Web Testing\Web_AutomationProject\src\test\java\com\shejuti\tests\LoginTest.java
+D:\Work\Web Testing\Web_AutomationProject\src\test\java\com\shejuti\tests\ProjectsTest.java
+D:\Work\Web Testing\Web_AutomationProject\src\test\java\com\shejuti\tests\TestingDemoTest.java
 D:\Work\Web Testing\Web_AutomationProject\src\test\java\com\shejuti\utils\ConfigReader.java
+D:\Work\Web Testing\Web_AutomationProject\src\test\java\com\shejuti\utils\WaitUtils.java

@@ -1,56 +1,118 @@
-README with:
-o	Project structure
-o	Tech stack
-o	How to run
-o	Future improvements
+# Web Automation Testing Project
 
-Document Your Portfolio Clearly
+This is a professional web automation testing project developed using **Java**, **Maven**, **TestNG**, and the **Page Object Model (POM)** design pattern. 
+It demonstrates modular automation design, structured test planning, and execution for a sample website hosted locally, or remotely.
 
-Include a note in your README or website that the project was built using a third-party demo site.
+---
 
-Mention the tool used, the tested features, and the test objective.
+## 📁 Project Structure Overview
 
-Provide screenshots or screen recordings of your working tests.
+```
+src/
+├── test/
+│   └── java/
+│       └── com.shejuti/
+│           ├── base/        → Base setup and common WebDriver config
+│           │   └── BaseTest.java
+│           ├── pages/       → Page Object Model classes for UI mapping
+│           │   ├── HomePage.java
+│           │   ├── LoginPage.java
+│           │   └── ... etc.
+│           ├── tests/       → Test classes for functional test scenarios
+│           │   ├── LoginTest.java
+│           │   ├── HomeTest.java
+│           │   └── ... etc.
+│           └── utils/       → Reusable utility classes (e.g., waits, configs)
+│               ├── ConfigReader.java
+│               └── WaitUtils.java
+├── test/resources/
+│   ├── config-dev.properties
+│   └── config-prod.properties
+└── testng.xml              → TestNG suite definition
+```
 
-Archive Project Videos
+---
 
-Create short demo videos (screen recording with voiceover or captions).
+## 🚀 How to Run the Project
 
-Upload to YouTube (unlisted) or include in your portfolio.
+### Prerequisites:
+- Java JDK 8+ installed
+- Maven installed
+- Chrome browser (or modify for other drivers)
+- Git (for version control)
 
-This way, you can still demonstrate your skills even if the site is gone.
+### Running Tests from Terminal
 
-Host Your Own Test Site (Recommended for Long-Term Stability)
+1. **Run tests with default (dev) environment**
+```bash
+mvn clean test
+```
 
-Use a React/Node.js or Spring Boot app with basic forms and pages.
+2. **Run with specific environment (e.g., production):**
+```bash
+mvn clean test -Denv=prod
+```
 
-Host it on AWS, GitHub Pages, or a local server.
+> The `env` parameter loads configuration from matching `config-<env>.properties` files.
 
-This gives you full control over the testing environment.
+---
 
-Use Docker or Local Setup Copies
+## 🧪 Testing Technologies & Tools Used
 
-Some projects like OrangeHRM provide Docker containers or downloadable versions.
+| Tool/Framework   | Purpose |
+|------------------|---------|
+| **Java**         | Programming language |
+| **Selenium WebDriver** | UI automation |
+| **TestNG**       | Test execution, assertions, test grouping |
+| **Maven**        | Build and dependency management |
+| **Page Object Model (POM)** | Separation of UI locators from logic |
+| **Git**          | Version control |
+| **XPath/CSS Selectors** | Web element location strategies |
 
-You can run them locally and keep the environment consistent.
+---
 
-Treat Public Demo Sites as Short-Term Showcases
+## 📄 Description of Script Types
 
-Use them mainly for skill demonstration in your learning or job-seeking phase.
+### ✅ `BaseTest.java`
+- Initializes WebDriver
+- Launches browser and navigates to base URL
+- Configured once and reused across all test classes
 
-Plan for migrating test cases to your own mock apps over time.
+### ✅ `pages/*.java`
+- Each page class (e.g., `LoginPage.java`) holds web element locators and user actions
+- Encapsulates all interaction logic for modular and reusable design
 
+### ✅ `tests/*.java`
+- Test cases that call methods from page classes
+- Each test class maps to a specific feature/page under test
 
+### ✅ `utils/*.java`
+- `ConfigReader.java`: Reads configuration from `.properties` files based on environment
+- `WaitUtils.java`: Reusable waits using `WebDriverWait` for element visibility, clickability etc.
 
+---
 
-Project for testing My personal portfolio website. 
-Tested with Selenium + TestNG + Maven + Java
-Environments: 2; Development and production
-Test Environment urls can be changed from '\src\test\resources\config-dev.properties' or  '\src\test\resources\config-prod.properties' files
+## 📌 Test Coverage
 
-Project uploaded to github: https://github.com/shejutik/WebAutomation
+Functional testing for the following modules is included:
+- Login functionality
+- Navigation to Home, About, Projects, Testing Demo, Contact pages
+- Form submissions and UI validations
 
-Running tests using maven and testng.xml file:
-Have to install TestNG from Help > Eclipse Marketplace or Help> Install New Software... 
-Right click on testng.xml > Run As > TestNG Suite
-mvn clean test -DsuiteXmlFile=testng.xml
+---
+
+## 📌 GitHub Repo
+github: https://github.com/shejutik/WebAutomation
+
+---
+
+## 📅 Last Updated
+July 15, 2025
+
+---
+
+## 📬 Author
+Shejuti Khan— Software Test Analyst | Automation Enthusiast  
+Melbourne, Australia
+
+---
