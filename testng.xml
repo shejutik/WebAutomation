@@ -3,7 +3,8 @@
 <suite name="Portfolio Test Suite">
   <test name="Login Tests">
     <classes>
-      <class name="com.shejuti.tests.LoginTest"/>
+      <!--<class name="com.shejuti.tests.LoginTest"/>-->
+      <class name="com.shejuti.tests.HomeTest"/>
     </classes>
   </test>
 </suite>

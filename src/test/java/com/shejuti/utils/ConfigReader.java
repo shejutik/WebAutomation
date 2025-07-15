@@ -9,10 +9,10 @@ public class ConfigReader {
     public static Properties initProperties() {
         prop = new Properties();
         try {
-            // Get the environment from system property
+            // Get the environment from system property env
             String env = System.getProperty("env", "dev"); // default to dev
-            FileInputStream ip = new FileInputStream("src/test/resources/config-" + env + ".properties");
-            prop.load(ip);
+            FileInputStream ip = new FileInputStream("src/test/resources/config-" + env + ".properties"); // Loads the appropriate .properties file based on the environment
+            prop.load(ip); // Loads key-value pairs (e.g., baseUrl=http://localhost:3000) into a Properties object
         } catch (Exception e) {
             e.printStackTrace();
         }

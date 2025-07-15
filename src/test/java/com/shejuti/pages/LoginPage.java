@@ -17,8 +17,8 @@ public class LoginPage {
     private WebDriver driver; // WebDriver reference to interact with the browser
 
     // ===== Locators for login page elements =====
-    private By usernameInput = By.name("username");     // Assuming input field has name="username"
-    private By passwordInput = By.name("password");     // Assuming input field has name="password"
+    private By usernameInput = By.name("username");     // input field has name="username"
+    private By passwordInput = By.name("password");     // input field has name="password"
     private By loginButton = By.id("loginButton"); // Login button identified by its id
     private By invalidCredentialErrorMsg = By.xpath("//p[contains(text(),'Invalid credentials')]");
 
