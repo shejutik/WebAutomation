@@ -6,6 +6,7 @@ import com.shejuti.base.BaseTest;
 import com.shejuti.pages.HomePage;
 import com.shejuti.pages.LoginPage;
 import com.shejuti.utils.ConfigReader;
+import com.shejuti.utils.TabUtils;
 import com.shejuti.utils.WaitUtils;
 
 import org.openqa.selenium.By;
@@ -32,12 +33,30 @@ public class HomeTest extends BaseTest {
         HomePage homePage = new HomePage(driver);
         homePage.clickLinkedIn();
         
-        // Use explicit wait to wait until webpage is visible
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
-        wait.until(ExpectedConditions.titleContains("Shejuti Khan | LinkedIn"));
+        TabUtils.switchToNewTabAndVerifyTitle(driver, "Shejuti Khan | LinkedIn", 10);
         
         // Verify correct linkedin page is displayed
         String currentUrl = driver.getCurrentUrl();
         Assert.assertEquals(currentUrl, "https://www.linkedin.com/in/shejutikhan/");
+        
+        driver.close(); // close Github tab
+        driver.switchTo().window(driver.getWindowHandles().iterator().next()); // return to main tab
+	}
+	
+	@Test
+	public void testGithubPagelaunch()
+	{
+		// Create HomePage object
+        HomePage homePage = new HomePage(driver);
+        homePage.clickGithub();
+        
+        TabUtils.switchToNewTabAndVerifyTitle(driver, "shejutik (Shejuti Khan)", 10);
+        
+        // Verify correct github page is displayed
+        String currentUrl = driver.getCurrentUrl();
+        Assert.assertEquals(currentUrl, "https://github.com/shejutik");
+        
+        driver.close(); // close Github tab
+        driver.switchTo().window(driver.getWindowHandles().iterator().next()); // return to main tab
 	}
 }

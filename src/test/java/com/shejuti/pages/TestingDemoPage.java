@@ -16,7 +16,7 @@ public class TestingDemoPage {
 
     private WebDriver driver; // WebDriver reference to interact with the browser
 
-    // ===== Locators for home page elements =====
+    // ===== Locators for testing demo page elements =====
 
 
     // ===== Constructor to initialize WebDriver =====

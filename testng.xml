@@ -4,7 +4,8 @@
   <test name="Login Tests">
     <classes>
       <!--<class name="com.shejuti.tests.LoginTest"/>-->
-      <class name="com.shejuti.tests.HomeTest"/>
+      <!--<class name="com.shejuti.tests.HomeTest"/>-->
+      <class name="com.shejuti.tests.ContactTest"/>
     </classes>
   </test>
 </suite>

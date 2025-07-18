@@ -54,7 +54,7 @@ public class LoginPage {
         clickLogin();
     }
     
- // Method to return error message text
+    // Method to return error message text
     public String getErrorMessage() {
         try {
             return driver.findElement(invalidCredentialErrorMsg).getText();

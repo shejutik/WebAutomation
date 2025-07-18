@@ -16,7 +16,7 @@ public class ProjectsPage {
 
     private WebDriver driver; // WebDriver reference to interact with the browser
 
-    // ===== Locators for home page elements =====
+    // ===== Locators for projects page elements =====
 
 
     // ===== Constructor to initialize WebDriver =====
