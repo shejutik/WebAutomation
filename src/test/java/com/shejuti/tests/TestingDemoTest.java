@@ -3,7 +3,9 @@ package com.shejuti.tests;
 import org.testng.Assert;
 import org.testng.annotations.Test;
 import com.shejuti.base.BaseTest;
+import com.shejuti.pages.ContactPage;
 import com.shejuti.pages.LoginPage;
+import com.shejuti.pages.TestingDemoPage;
 import com.shejuti.utils.ConfigReader;
 import com.shejuti.utils.WaitUtils;
 
@@ -20,9 +22,28 @@ import java.time.Duration;
 
 public class TestingDemoTest extends BaseTest {
 
-	String testingDemoLoginUrl = ConfigReader.get("baseUrl") + "/testingdemologin";
-	String testingDemoUrl = ConfigReader.get("baseUrl") + "/testingdemo";
-	private By testingDemoHeader = By.xpath("//h2[text()='Testing Demo']");
+	String testingDemoPageUrl = ConfigReader.get("baseUrl") + "/testingdemo";
 
+	@Test
+	public void testFileUpload() {
+		
+		LoginPage loginPage = new LoginPage(driver);
+		
+		// Open contact page
+        driver.get(testingDemoPageUrl); 
+        loginPage.login("admin", "123");
+
+        // Create TestingDemoPage object
+        TestingDemoPage TestingDemoPage = new TestingDemoPage(driver);
+        
+        TestingDemoPage.inputFileLocation("D:\\Work\\Testing Portfolio_Local\\client\\src\\assets\\sample text file.txt");
+        
+        By fileUploadSuccessMsgLocator = By.xpath("//p[contains(text(),'uploaded successfully')]");
+        
+        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        wait.until(ExpectedConditions.visibilityOfElementLocated(fileUploadSuccessMsgLocator));
+        
+        Assert.assertTrue(TestingDemoPage.isFileUploadSuccessMessageDisplayed("sample text file.txt"), "❌ File upload success message not found!");
+	}
 
 }

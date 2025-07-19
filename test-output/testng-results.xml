@@ -2,24 +2,24 @@
 <testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-18T13:31:47 AEST" name="Portfolio Test Suite" finished-at="2025-07-18T13:31:51 AEST" duration-ms="3336">
+  <suite started-at="2025-07-19T17:05:04 AEST" name="Portfolio Test Suite" finished-at="2025-07-19T17:05:07 AEST" duration-ms="3220">
     <groups>
     </groups>
-    <test started-at="2025-07-18T13:31:47 AEST" name="Login Tests" finished-at="2025-07-18T13:31:51 AEST" duration-ms="3336">
-      <class name="com.shejuti.tests.ContactTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.shejuti.tests.ContactTest@1573f9fc]" started-at="2025-07-18T13:31:47 AEST" name="setUp" finished-at="2025-07-18T13:31:50 AEST" duration-ms="2771" status="PASS">
+    <test started-at="2025-07-19T17:05:04 AEST" name="Login Tests" finished-at="2025-07-19T17:05:07 AEST" duration-ms="3220">
+      <class name="com.shejuti.tests.TestingDemoTest">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.shejuti.tests.TestingDemoTest@1573f9fc]" started-at="2025-07-19T17:05:04 AEST" name="setUp" finished-at="2025-07-19T17:05:07 AEST" duration-ms="2420" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testContactMessageSend()[pri:0, instance:com.shejuti.tests.ContactTest@1573f9fc]" started-at="2025-07-18T13:31:50 AEST" name="testContactMessageSend" finished-at="2025-07-18T13:31:51 AEST" duration-ms="384" status="PASS">
+        <test-method signature="testFileUpload()[pri:0, instance:com.shejuti.tests.TestingDemoTest@1573f9fc]" started-at="2025-07-19T17:05:07 AEST" name="testFileUpload" finished-at="2025-07-19T17:05:07 AEST" duration-ms="502" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- testContactMessageSend -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.shejuti.tests.ContactTest@1573f9fc]" started-at="2025-07-18T13:31:51 AEST" name="tearDown" finished-at="2025-07-18T13:31:51 AEST" duration-ms="155" status="PASS">
+        </test-method> <!-- testFileUpload -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.shejuti.tests.TestingDemoTest@1573f9fc]" started-at="2025-07-19T17:05:07 AEST" name="tearDown" finished-at="2025-07-19T17:05:07 AEST" duration-ms="250" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.shejuti.tests.ContactTest -->
+      </class> <!-- com.shejuti.tests.TestingDemoTest -->
     </test> <!-- Login Tests -->
   </suite> <!-- Portfolio Test Suite -->
 </testng-results>

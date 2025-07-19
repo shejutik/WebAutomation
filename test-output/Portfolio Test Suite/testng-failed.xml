@@ -3,13 +3,13 @@
 <suite name="Failed suite [Portfolio Test Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Login Tests(failed)">
     <classes>
-      <class name="com.shejuti.tests.HomeTest">
+      <class name="com.shejuti.tests.TestingDemoTest">
         <methods>
           <include name="setUp"/>
+          <include name="testFileUpload"/>
           <include name="tearDown"/>
-          <include name="testLinkedInPagelaunch"/>
         </methods>
-      </class> <!-- com.shejuti.tests.HomeTest -->
+      </class> <!-- com.shejuti.tests.TestingDemoTest -->
     </classes>
   </test> <!-- Login Tests(failed) -->
 </suite> <!-- Failed suite [Portfolio Test Suite] -->
