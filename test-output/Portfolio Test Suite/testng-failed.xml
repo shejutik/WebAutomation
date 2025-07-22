@@ -6,7 +6,7 @@
       <class name="com.shejuti.tests.TestingDemoTest">
         <methods>
           <include name="setUp"/>
-          <include name="testFileUpload"/>
+          <include name="testDynamicItemRemove"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- com.shejuti.tests.TestingDemoTest -->

@@ -1,21 +1,81 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-07-19T17:05:04 AEST" name="Portfolio Test Suite" finished-at="2025-07-19T17:05:07 AEST" duration-ms="3220">
+  <suite started-at="2025-07-22T12:55:11 AEST" name="Portfolio Test Suite" finished-at="2025-07-22T12:55:22 AEST" duration-ms="11385">
     <groups>
     </groups>
-    <test started-at="2025-07-19T17:05:04 AEST" name="Login Tests" finished-at="2025-07-19T17:05:07 AEST" duration-ms="3220">
+    <test started-at="2025-07-22T12:55:11 AEST" name="Login Tests" finished-at="2025-07-22T12:55:22 AEST" duration-ms="11385">
       <class name="com.shejuti.tests.TestingDemoTest">
-        <test-method is-config="true" signature="setUp()[pri:0, instance:com.shejuti.tests.TestingDemoTest@1573f9fc]" started-at="2025-07-19T17:05:04 AEST" name="setUp" finished-at="2025-07-19T17:05:07 AEST" duration-ms="2420" status="PASS">
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.shejuti.tests.TestingDemoTest@22ff4249]" started-at="2025-07-22T12:55:11 AEST" name="setUp" finished-at="2025-07-22T12:55:12 AEST" duration-ms="1805" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUp -->
-        <test-method signature="testFileUpload()[pri:0, instance:com.shejuti.tests.TestingDemoTest@1573f9fc]" started-at="2025-07-19T17:05:07 AEST" name="testFileUpload" finished-at="2025-07-19T17:05:07 AEST" duration-ms="502" status="PASS">
+        <test-method signature="testDropDownSelection()[pri:0, instance:com.shejuti.tests.TestingDemoTest@22ff4249]" started-at="2025-07-22T12:55:12 AEST" name="testDropDownSelection" description="Verify Drop Down Selection" finished-at="2025-07-22T12:55:13 AEST" duration-ms="376" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDropDownSelection -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.shejuti.tests.TestingDemoTest@22ff4249]" started-at="2025-07-22T12:55:13 AEST" name="tearDown" finished-at="2025-07-22T12:55:13 AEST" duration-ms="144" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.shejuti.tests.TestingDemoTest@22ff4249]" started-at="2025-07-22T12:55:13 AEST" name="setUp" finished-at="2025-07-22T12:55:14 AEST" duration-ms="1249" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testDynamicItemAdd()[pri:0, instance:com.shejuti.tests.TestingDemoTest@22ff4249]" started-at="2025-07-22T12:55:14 AEST" name="testDynamicItemAdd" description="Verify Dynamic Item Add" finished-at="2025-07-22T12:55:15 AEST" duration-ms="409" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDynamicItemAdd -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.shejuti.tests.TestingDemoTest@22ff4249]" started-at="2025-07-22T12:55:15 AEST" name="tearDown" finished-at="2025-07-22T12:55:15 AEST" duration-ms="116" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.shejuti.tests.TestingDemoTest@22ff4249]" started-at="2025-07-22T12:55:15 AEST" name="setUp" finished-at="2025-07-22T12:55:16 AEST" duration-ms="1247" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testDynamicItemRemove()[pri:0, instance:com.shejuti.tests.TestingDemoTest@22ff4249]" started-at="2025-07-22T12:55:16 AEST" name="testDynamicItemRemove" description="Verify Dynamic Item Remove" finished-at="2025-07-22T12:55:16 AEST" duration-ms="324" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testDynamicItemRemove -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.shejuti.tests.TestingDemoTest@22ff4249]" started-at="2025-07-22T12:55:16 AEST" name="tearDown" finished-at="2025-07-22T12:55:16 AEST" duration-ms="200" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.shejuti.tests.TestingDemoTest@22ff4249]" started-at="2025-07-22T12:55:16 AEST" name="setUp" finished-at="2025-07-22T12:55:18 AEST" duration-ms="1324" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testFileUpload()[pri:0, instance:com.shejuti.tests.TestingDemoTest@22ff4249]" started-at="2025-07-22T12:55:18 AEST" name="testFileUpload" description="Verify File Upload" finished-at="2025-07-22T12:55:18 AEST" duration-ms="385" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testFileUpload -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.shejuti.tests.TestingDemoTest@1573f9fc]" started-at="2025-07-19T17:05:07 AEST" name="tearDown" finished-at="2025-07-19T17:05:07 AEST" duration-ms="250" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.shejuti.tests.TestingDemoTest@22ff4249]" started-at="2025-07-22T12:55:18 AEST" name="tearDown" finished-at="2025-07-22T12:55:18 AEST" duration-ms="163" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.shejuti.tests.TestingDemoTest@22ff4249]" started-at="2025-07-22T12:55:18 AEST" name="setUp" finished-at="2025-07-22T12:55:20 AEST" duration-ms="1239" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testFormValidation()[pri:0, instance:com.shejuti.tests.TestingDemoTest@22ff4249]" started-at="2025-07-22T12:55:20 AEST" name="testFormValidation" description="Verify Form Validation" finished-at="2025-07-22T12:55:20 AEST" duration-ms="464" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testFormValidation -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.shejuti.tests.TestingDemoTest@22ff4249]" started-at="2025-07-22T12:55:20 AEST" name="tearDown" finished-at="2025-07-22T12:55:20 AEST" duration-ms="140" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="setUp()[pri:0, instance:com.shejuti.tests.TestingDemoTest@22ff4249]" started-at="2025-07-22T12:55:20 AEST" name="setUp" finished-at="2025-07-22T12:55:21 AEST" duration-ms="1258" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method signature="testLogout()[pri:0, instance:com.shejuti.tests.TestingDemoTest@22ff4249]" started-at="2025-07-22T12:55:21 AEST" name="testLogout" description="Verify Logout from Testing Demo page" finished-at="2025-07-22T12:55:22 AEST" duration-ms="361" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- testLogout -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.shejuti.tests.TestingDemoTest@22ff4249]" started-at="2025-07-22T12:55:22 AEST" name="tearDown" finished-at="2025-07-22T12:55:22 AEST" duration-ms="142" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
