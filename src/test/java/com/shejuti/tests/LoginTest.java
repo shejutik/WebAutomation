@@ -1,6 +1,7 @@
 package com.shejuti.tests;
 
 import org.testng.Assert;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import com.shejuti.base.BaseTest;
 import com.shejuti.pages.LoginPage;
@@ -47,7 +48,8 @@ public class LoginTest extends BaseTest {
     }
     
     @Test
-    public void testValidLogin() {
+    @Parameters({"username", "password"})
+    public void testValidLogin(String username, String password) {
         // Open testing demo login page
         driver.get(testingDemoLoginUrl); 
 
@@ -55,7 +57,7 @@ public class LoginTest extends BaseTest {
         LoginPage loginPage = new LoginPage(driver);
 
         // Perform login with valid credentials
-        loginPage.login("admin", "123");
+        loginPage.login(username, password);
 
         // Validate navigation or presence of some element after login
         WaitUtils.waitUntilVisible(driver, testingDemoHeader, 10);

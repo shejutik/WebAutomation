@@ -6,6 +6,7 @@ import com.shejuti.base.BaseTest;
 import com.shejuti.pages.ContactPage;
 import com.shejuti.pages.LoginPage;
 import com.shejuti.utils.ConfigReader;
+import com.shejuti.utils.TestData;
 import com.shejuti.utils.WaitUtils;
 
 import org.openqa.selenium.By;
@@ -24,8 +25,8 @@ public class ContactTest extends BaseTest {
 	String contactPageUrl = ConfigReader.get("baseUrl") + "/contact";
 
 
-	@Test
-    public void testContactMessageSend() {
+	@Test(dataProvider = "contactData", dataProviderClass = TestData.class) // using dataProvider for multiple tests
+    public void testContactMessageSend(String contactName, String contactEmail, String contactMsg) {
         // Open contact page
         driver.get(contactPageUrl); 
 
@@ -33,7 +34,7 @@ public class ContactTest extends BaseTest {
         ContactPage contactPage = new ContactPage(driver);
 
         // Perform login with valid credentials
-        contactPage.sendMessage("Daniel Lewis", "shejutikhan+1@gmail.com", "This is a test contact message");
+        contactPage.sendMessage(contactName, contactEmail, contactMsg);
         Assert.assertTrue(contactPage.isSuccessMessageDisplayed(), "❌ Success message not found!");
     }
 	

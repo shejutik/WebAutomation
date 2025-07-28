@@ -1,6 +1,7 @@
 package com.shejuti.tests;
 
 import org.testng.Assert;
+import org.testng.annotations.Parameters;
 import org.testng.annotations.Test;
 import com.shejuti.base.BaseTest;
 import com.shejuti.pages.ContactPage;
@@ -23,15 +24,16 @@ import java.time.Duration;
 public class TestingDemoTest extends BaseTest {
 
 	String testingDemoPageUrl = ConfigReader.get("baseUrl") + "/testingdemo";
-
+	
 	@Test(description = "Verify File Upload")
-	public void testFileUpload() {
+	@Parameters({"username", "password"})
+	public void testFileUpload(String username, String password) {
 		
 		LoginPage loginPage = new LoginPage(driver);
 		
 		// Open testing demo page
         driver.get(testingDemoPageUrl); 
-        loginPage.login("admin", "123");
+        loginPage.login(username, password);
 
         // Create TestingDemoPage object
         TestingDemoPage TestingDemoPage = new TestingDemoPage(driver);
@@ -47,13 +49,14 @@ public class TestingDemoTest extends BaseTest {
 	}
 	
 	@Test(description = "Verify Form Validation")
-	public void testFormValidation() {
+	@Parameters({"username", "password"})
+	public void testFormValidation(String username, String password) {
 		
 		LoginPage loginPage = new LoginPage(driver);
 		
 		// Open testing demo page
         driver.get(testingDemoPageUrl); 
-        loginPage.login("admin", "123");
+        loginPage.login(username, password);
 
         // Create TestingDemoPage object
         TestingDemoPage TestingDemoPage = new TestingDemoPage(driver);
@@ -64,13 +67,14 @@ public class TestingDemoTest extends BaseTest {
        	}
 	
 	@Test(description = "Verify Drop Down Selection")
-	public void testDropDownSelection() {
+	@Parameters({"username", "password"})
+	public void testDropDownSelection(String username, String password) {
 		
 		LoginPage loginPage = new LoginPage(driver);
 		
 		// Open testing demo page
         driver.get(testingDemoPageUrl); 
-        loginPage.login("admin", "123");
+        loginPage.login(username, password);
        
         // Create TestingDemoPage object
         TestingDemoPage TestingDemoPage = new TestingDemoPage(driver);
@@ -85,13 +89,14 @@ public class TestingDemoTest extends BaseTest {
        	}
 	
 	@Test(description = "Verify Dynamic Item Add")
-	public void testDynamicItemAdd() {
+	@Parameters({"username", "password"})
+	public void testDynamicItemAdd(String username, String password) {
 		
 		LoginPage loginPage = new LoginPage(driver);
 		
 		// Open testing demo page
         driver.get(testingDemoPageUrl); 
-        loginPage.login("admin", "123");
+        loginPage.login(username, password);
        
         // Create TestingDemoPage object
         TestingDemoPage TestingDemoPage = new TestingDemoPage(driver);
@@ -103,13 +108,14 @@ public class TestingDemoTest extends BaseTest {
        	}
 	
 	@Test(description = "Verify Dynamic Item Remove")
-	public void testDynamicItemRemove() throws InterruptedException {
+	@Parameters({"username", "password"})
+	public void testDynamicItemRemove(String username, String password) throws InterruptedException {
 		
 		LoginPage loginPage = new LoginPage(driver);
 		
 		// Open testing demo page
         driver.get(testingDemoPageUrl); 
-        loginPage.login("admin", "123");
+        loginPage.login(username, password);
        
         // Create TestingDemoPage object
         TestingDemoPage TestingDemoPage = new TestingDemoPage(driver);
@@ -125,13 +131,14 @@ public class TestingDemoTest extends BaseTest {
        	}
 	
 	@Test(description = "Verify Logout from Testing Demo page")
-	public void testLogout(){
+	@Parameters({"username", "password"})
+	public void testLogout(String username, String password){
 		
 		LoginPage loginPage = new LoginPage(driver);
 		
 		// Open testing demo page
         driver.get(testingDemoPageUrl); 
-        loginPage.login("admin", "123");
+        loginPage.login(username, password);
        
         // Create TestingDemoPage object
         TestingDemoPage TestingDemoPage = new TestingDemoPage(driver);
