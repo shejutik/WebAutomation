@@ -142,6 +142,7 @@ public class TestingDemoPage {
         driver.findElement(dynamicItemAddButton).click();
     }
     
+    // Checks if a dynamic item is found in list
     public boolean isDynamicItemFoundInList(String itemText) {
         try {
             WebElement item = driver.findElement(By.xpath("//li[contains(., '" + itemText + "') and .//button[text()='Remove']]"));
@@ -151,6 +152,7 @@ public class TestingDemoPage {
         }
     }
     
+    // clicks to remove and confirms removal of a dynamic item
     public void clickRemoveAndConfirmForDynamicItem(String itemText) throws InterruptedException {
         WebElement removeButton = driver.findElement(
             By.xpath("//li[contains(., '" + itemText + "')]//button[text()='Remove']")
@@ -160,6 +162,7 @@ public class TestingDemoPage {
         alert.accept();
     }
     
+    // clicks to remove and cancels removal of a dynamic item
     public void clickRemoveAndCancelForDynamicItem(String itemText) {
         WebElement removeButton = driver.findElement(
             By.xpath("//li[contains(., '" + itemText + "')]//button[text()='Remove']")
@@ -169,6 +172,7 @@ public class TestingDemoPage {
         alert.dismiss();
     }
     
+    // Checks if a confirmation is shown for item removal
     public boolean isItemRemovalConfirmationDisplayed(String itemText) {
 
         String expectedMessage = "Removed: " + itemText;

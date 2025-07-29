@@ -1,11 +1,13 @@
 package com.shejuti.pages; 
 
 import org.openqa.selenium.By;
-
+import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 
 import org.testng.Assert;
+
+import com.shejuti.utils.TestUtils;
 import com.shejuti.utils.WaitUtils;
 
 /**
@@ -67,6 +69,36 @@ public class LoginPage {
     public boolean isErrorMessageDisplayed() {
         try {
             return driver.findElement(invalidCredentialErrorMsg).isDisplayed();
+        } catch (Exception e) {
+            return false;
+        }
+    }
+    
+    // Method to check if form validation message is displayed for username field
+    public boolean isFormValidationDisplayedForUsername() {
+        try {
+        	
+        	WebElement usernameField = driver.findElement(By.name("username"));
+        	// Get the message
+        	String message = TestUtils.getValidationMessage(driver, usernameField);
+        	System.out.println("Validation Message: " + message);
+        	return TestUtils.isValidationMessageForRequiredField(driver, usernameField);
+        	
+        } catch (Exception e) {
+            return false;
+        }
+    }
+    
+    // Method to check if form validation message is displayed for password field
+    public boolean isFormValidationDisplayedForPassword() {
+        try {
+        	
+        	WebElement passwordField = driver.findElement(By.name("password"));
+        	// Get the message
+        	String message = TestUtils.getValidationMessage(driver, passwordField);
+        	System.out.println("Validation Message: " + message);
+        	return TestUtils.isValidationMessageForRequiredField(driver, passwordField);
+        	
         } catch (Exception e) {
             return false;
         }

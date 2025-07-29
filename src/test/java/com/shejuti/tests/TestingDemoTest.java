@@ -24,10 +24,11 @@ import java.time.Duration;
 public class TestingDemoTest extends BaseTest {
 
 	String testingDemoPageUrl = ConfigReader.get("baseUrl") + "/testingdemo";
-	
+	String username = ConfigReader.get("defaultUsername");
+    String password = ConfigReader.get("defaultPassword");
+    
 	@Test(description = "Verify File Upload")
-	@Parameters({"username", "password"})
-	public void testFileUpload(String username, String password) {
+	public void testFileUpload() {
 		
 		LoginPage loginPage = new LoginPage(driver);
 		
@@ -49,8 +50,7 @@ public class TestingDemoTest extends BaseTest {
 	}
 	
 	@Test(description = "Verify Form Validation")
-	@Parameters({"username", "password"})
-	public void testFormValidation(String username, String password) {
+	public void testFormValidation() {
 		
 		LoginPage loginPage = new LoginPage(driver);
 		
@@ -67,8 +67,7 @@ public class TestingDemoTest extends BaseTest {
        	}
 	
 	@Test(description = "Verify Drop Down Selection")
-	@Parameters({"username", "password"})
-	public void testDropDownSelection(String username, String password) {
+	public void testDropDownSelection() {
 		
 		LoginPage loginPage = new LoginPage(driver);
 		
@@ -89,8 +88,7 @@ public class TestingDemoTest extends BaseTest {
        	}
 	
 	@Test(description = "Verify Dynamic Item Add")
-	@Parameters({"username", "password"})
-	public void testDynamicItemAdd(String username, String password) {
+	public void testDynamicItemAdd() {
 		
 		LoginPage loginPage = new LoginPage(driver);
 		
@@ -108,8 +106,7 @@ public class TestingDemoTest extends BaseTest {
        	}
 	
 	@Test(description = "Verify Dynamic Item Remove")
-	@Parameters({"username", "password"})
-	public void testDynamicItemRemove(String username, String password) throws InterruptedException {
+	public void testDynamicItemRemove() throws InterruptedException {
 		
 		LoginPage loginPage = new LoginPage(driver);
 		
@@ -131,8 +128,7 @@ public class TestingDemoTest extends BaseTest {
        	}
 	
 	@Test(description = "Verify Logout from Testing Demo page")
-	@Parameters({"username", "password"})
-	public void testLogout(String username, String password){
+	public void testLogout(){
 		
 		LoginPage loginPage = new LoginPage(driver);
 		

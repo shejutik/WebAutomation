@@ -2,9 +2,15 @@ package com.shejuti.base;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.edge.EdgeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Optional;
+import org.testng.annotations.Parameters;
 
 import com.shejuti.utils.ConfigReader;
+
+import io.github.bonigarcia.wdm.WebDriverManager;
 
 import org.testng.annotations.AfterMethod;
 import java.time.Duration;  // For setting implicit wait timeout
@@ -20,21 +26,37 @@ public abstract class BaseTest {
 
     /**
      * This method runs before each @Test method.
-     * It initializes the ChromeDriver and opens the browser.
+     * It initializes the browser driver and opens the browser.
      */
+    @Parameters("browser")
     @BeforeMethod
-    public void setUp() {
-        // Optional: Set the path to your ChromeDriver manually (uncomment and update if needed)
+    public void setUpDriver(@Optional("chrome") String browser) {
+        // Optional: Set the path to the ChromeDriver manually (uncomment and update if needed)
         // System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
 
-        driver = new ChromeDriver(); // Launches a new Chrome browser instance
+	    	switch (browser.toLowerCase()) {
+	        case "chrome":
+	        	WebDriverManager.chromedriver().setup();
+	            driver = new ChromeDriver();
+	            break;
+	        case "firefox":
+	        	WebDriverManager.firefoxdriver().setup();
+	            driver = new FirefoxDriver();
+	            break;
+	        case "edge":
+	        	WebDriverManager.edgedriver().setup();
+	            driver = new EdgeDriver();
+	            break;
+	        default:
+	            throw new IllegalArgumentException("Browser not supported: " + browser);
+	    }
         driver.manage().window().maximize(); // Maximizes the browser window
 
         // Sets a global implicit wait of 10 seconds for all findElement and findElements calls before throwing a NoSuchElementException
         // Not using implicit wait as using explicit wait where needed from WaitUtils.java class
         // driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
 
-        // Loads your locally hosted testing website (React frontend)
+        // Loads the locally/remotely hosted testing website (React frontend)
         driver.get(ConfigReader.get("baseUrl"));
     }
 

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Portfolio Test Suite - Edge">
+  <parameter name="browser" value="edge"/>
+  
+  <!-- Login Tests on Edge -->
+  <test name="Login Tests">
+    <classes>
+      <class name="com.shejuti.tests.LoginTest"/>
+    </classes>
+  </test>
+  
+  <!-- Home Tests on Edge -->
+  <test name="Home Tests">
+    <classes>
+      <!--<class name="com.shejuti.tests.HomeTest"/>-->
+    </classes>
+  </test>
+ 
+  <!-- Contact Tests on Edge -->
+  <test name="Contact Tests">
+    <classes>
+      <!--<class name="com.shejuti.tests.ContactTest"/>-->
+    </classes>
+  </test>
+  
+  <!-- Testing Demo Tests on Edge -->
+  <test name="Testing Demo Tests">
+    <classes>
+      <!--<class name="com.shejuti.tests.TestingDemoTest"/>-->
+    </classes>
+  </test>
+</suite>

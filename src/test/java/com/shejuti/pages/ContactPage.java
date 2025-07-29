@@ -30,16 +30,20 @@ public class ContactPage {
     }
 
     // ===== Action Methods =====
+    
+    // Enters contact name on contact form
     public void enterContactName(String contactName) {
         driver.findElement(contactNameField).clear();      // Clear previous value (if any)
         driver.findElement(contactNameField).sendKeys(contactName);
     }
     
+    // Enters contact email on contact form
     public void enterContactEmail(String contactEmail) {
         driver.findElement(contactEmailField).clear();      // Clear previous value (if any)
         driver.findElement(contactEmailField).sendKeys(contactEmail);
     }
     
+    // Enters contact message on contact form
     public void enterContactMessage(String contactMessage) {
         driver.findElement(contactMessageField).clear();      // Clear previous value (if any)
         driver.findElement(contactMessageField).sendKeys(contactMessage);

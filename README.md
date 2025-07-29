@@ -53,6 +53,11 @@ mvn clean test
 mvn clean test -Denv=prod
 ```
 
+3. **Run with specific browser (e.g., firefox):**
+```bash
+mvn test -Dbrowser=firefox -DsuiteXmlFile=testng-firefox.xml
+```
+
 > The `env` parameter loads configuration from matching `config-<env>.properties` files.
 
 ---

@@ -6,7 +6,7 @@ import com.shejuti.base.BaseTest;
 import com.shejuti.pages.HomePage;
 import com.shejuti.pages.LoginPage;
 import com.shejuti.utils.ConfigReader;
-import com.shejuti.utils.TabUtils;
+import com.shejuti.utils.TestUtils;
 import com.shejuti.utils.WaitUtils;
 
 import org.openqa.selenium.By;
@@ -26,14 +26,14 @@ public class HomeTest extends BaseTest {
 	private By linkedInPage = By.xpath("//h2[text()='Testing Demo']");
 
 
-	@Test
+	@Test(description = "Verify linkedin page launch")
 	public void testLinkedInPagelaunch()
 	{
 		// Create HomePage object
         HomePage homePage = new HomePage(driver);
         homePage.clickLinkedIn();
         
-        TabUtils.switchToNewTabAndVerifyTitle(driver, "Shejuti Khan | LinkedIn", 10);
+        TestUtils.switchToNewTabAndVerifyTitle(driver, "Shejuti Khan | LinkedIn", 10);
         
         // Verify correct linkedin page is displayed
         String currentUrl = driver.getCurrentUrl();
@@ -43,14 +43,14 @@ public class HomeTest extends BaseTest {
         driver.switchTo().window(driver.getWindowHandles().iterator().next()); // return to main tab
 	}
 	
-	@Test
+	@Test(description = "Verify github page launch")
 	public void testGithubPagelaunch()
 	{
 		// Create HomePage object
         HomePage homePage = new HomePage(driver);
         homePage.clickGithub();
         
-        TabUtils.switchToNewTabAndVerifyTitle(driver, "shejutik (Shejuti Khan)", 10);
+        TestUtils.switchToNewTabAndVerifyTitle(driver, "shejutik (Shejuti Khan)", 10);
         
         // Verify correct github page is displayed
         String currentUrl = driver.getCurrentUrl();

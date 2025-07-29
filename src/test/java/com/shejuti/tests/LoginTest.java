@@ -6,6 +6,7 @@ import org.testng.annotations.Test;
 import com.shejuti.base.BaseTest;
 import com.shejuti.pages.LoginPage;
 import com.shejuti.utils.ConfigReader;
+import com.shejuti.utils.TestData;
 import com.shejuti.utils.WaitUtils;
 
 import org.openqa.selenium.By;
@@ -23,10 +24,12 @@ public class LoginTest extends BaseTest {
 
 	String testingDemoLoginUrl = ConfigReader.get("baseUrl") + "/testingdemologin";
 	String testingDemoUrl = ConfigReader.get("baseUrl") + "/testingdemo";
+	String username = ConfigReader.get("defaultUsername");
+    String password = ConfigReader.get("defaultPassword");
 	private By testingDemoHeader = By.xpath("//h2[text()='Testing Demo']");
 
-    @Test
-    public void testInvalidLoginShowsErrorMessage() {
+    @Test(description = "Verify invalid login credentials shows error message", dataProvider = "loginData", dataProviderClass = TestData.class)
+    public void testInvalidLoginShowsErrorMessage(String userName, String password) {
         // Open login page
         driver.get(testingDemoLoginUrl);
 
@@ -34,7 +37,7 @@ public class LoginTest extends BaseTest {
         LoginPage loginPage = new LoginPage(driver);
 
         // Use invalid credentials
-        loginPage.login("wronguser", "wrongpass");
+        loginPage.login(userName, password);
 
         // Define locator for error message
         By errorMsgLocator = By.xpath("//p[contains(text(),'Invalid credentials')]");
@@ -47,9 +50,26 @@ public class LoginTest extends BaseTest {
         Assert.assertTrue(errorMsg.isDisplayed(), "Error message not displayed for invalid login.");
     }
     
-    @Test
-    @Parameters({"username", "password"})
-    public void testValidLogin(String username, String password) {
+    @Test(description = "Verify empty login credentials shows prompt message")
+    public void testAdminAndPasswordBothMandatoryForLogin() {
+        // Open login page
+        driver.get(testingDemoLoginUrl);
+
+        // Create LoginPage object
+        LoginPage loginPage = new LoginPage(driver);
+        loginPage.clickLogin();
+
+        // Assert message is displayed
+        Assert.assertTrue(loginPage.isFormValidationDisplayedForUsername(), "Prompt message not displayed for empty username");
+        
+        loginPage.enterUsername("admin");
+        loginPage.clickLogin();
+        Assert.assertTrue(loginPage.isFormValidationDisplayedForPassword(), "Prompt message not displayed for empty password");
+    }
+    
+    @Test(description = "Verify valid login credentials logs into the system")
+    public void testValidLogin() {
+    	
         // Open testing demo login page
         driver.get(testingDemoLoginUrl); 
 
