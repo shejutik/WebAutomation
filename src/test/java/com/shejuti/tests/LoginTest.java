@@ -31,10 +31,10 @@ public class LoginTest extends BaseTest {
     @Test(description = "Verify invalid login credentials shows error message", dataProvider = "loginData", dataProviderClass = TestData.class)
     public void testInvalidLoginShowsErrorMessage(String userName, String password) {
         // Open login page
-        driver.get(testingDemoLoginUrl);
+    	getDriver().get(testingDemoLoginUrl);
 
         // Create LoginPage object
-        LoginPage loginPage = new LoginPage(driver);
+        LoginPage loginPage = new LoginPage(getDriver());
 
         // Use invalid credentials
         loginPage.login(userName, password);
@@ -43,7 +43,7 @@ public class LoginTest extends BaseTest {
         By errorMsgLocator = By.xpath("//p[contains(text(),'Invalid credentials')]");
 
         // Use explicit wait to wait until message is visible
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(5));
         WebElement errorMsg = wait.until(ExpectedConditions.visibilityOfElementLocated(errorMsgLocator));
 
         // Assert message is displayed
@@ -53,10 +53,10 @@ public class LoginTest extends BaseTest {
     @Test(description = "Verify empty login credentials shows prompt message")
     public void testAdminAndPasswordBothMandatoryForLogin() {
         // Open login page
-        driver.get(testingDemoLoginUrl);
+    	getDriver().get(testingDemoLoginUrl);
 
         // Create LoginPage object
-        LoginPage loginPage = new LoginPage(driver);
+        LoginPage loginPage = new LoginPage(getDriver());
         loginPage.clickLogin();
 
         // Assert message is displayed
@@ -71,16 +71,16 @@ public class LoginTest extends BaseTest {
     public void testValidLogin() {
     	
         // Open testing demo login page
-        driver.get(testingDemoLoginUrl); 
+    	getDriver().get(testingDemoLoginUrl); 
 
         // Create LoginPage object
-        LoginPage loginPage = new LoginPage(driver);
+        LoginPage loginPage = new LoginPage(getDriver());
 
         // Perform login with valid credentials
         loginPage.login(username, password);
 
         // Validate navigation or presence of some element after login
-        WaitUtils.waitUntilVisible(driver, testingDemoHeader, 10);
-        Assert.assertEquals(driver.getCurrentUrl(), testingDemoUrl, "Login failed or redirection incorrect.");
+        WaitUtils.waitUntilVisible(getDriver(), testingDemoHeader, 10);
+        Assert.assertEquals(getDriver().getCurrentUrl(), testingDemoUrl, "Login failed or redirection incorrect.");
     }
 }

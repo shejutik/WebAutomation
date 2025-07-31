@@ -28,10 +28,10 @@ public class ContactTest extends BaseTest {
 	@Test(dataProvider = "contactData", dataProviderClass = TestData.class) // using dataProvider for multiple tests
     public void testContactMessageSend(String contactName, String contactEmail, String contactMsg) {
         // Open contact page
-        driver.get(contactPageUrl); 
+		getDriver().get(contactPageUrl); 
 
         // Create ContactPage object
-        ContactPage contactPage = new ContactPage(driver);
+        ContactPage contactPage = new ContactPage(getDriver());
 
         // Perform login with valid credentials
         contactPage.sendMessage(contactName, contactEmail, contactMsg);

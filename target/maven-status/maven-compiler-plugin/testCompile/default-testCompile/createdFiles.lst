@@ -1,4 +1,17 @@
 com\shejuti\utils\ConfigReader.class
+com\shejuti\tests\HomeTest.class
+com\shejuti\pages\ProjectsPage.class
 com\shejuti\tests\LoginTest.class
+com\shejuti\tests\ProjectsTest.class
+com\shejuti\pages\ContactPage.class
+com\shejuti\utils\TestUtils.class
+com\shejuti\pages\AboutPage.class
+com\shejuti\pages\HomePage.class
 com\shejuti\pages\LoginPage.class
+com\shejuti\tests\TestingDemoTest.class
+com\shejuti\utils\TestData.class
+com\shejuti\pages\TestingDemoPage.class
+com\shejuti\tests\AboutTest.class
 com\shejuti\base\BaseTest.class
+com\shejuti\utils\WaitUtils.class
+com\shejuti\tests\ContactTest.class

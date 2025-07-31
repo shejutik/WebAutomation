@@ -30,33 +30,33 @@ public class HomeTest extends BaseTest {
 	public void testLinkedInPagelaunch()
 	{
 		// Create HomePage object
-        HomePage homePage = new HomePage(driver);
+        HomePage homePage = new HomePage(getDriver());
         homePage.clickLinkedIn();
         
-        TestUtils.switchToNewTabAndVerifyTitle(driver, "Shejuti Khan | LinkedIn", 10);
+        TestUtils.switchToNewTabAndVerifyTitle(getDriver(), "Shejuti Khan | LinkedIn", 10);
         
         // Verify correct linkedin page is displayed
-        String currentUrl = driver.getCurrentUrl();
+        String currentUrl = getDriver().getCurrentUrl();
         Assert.assertEquals(currentUrl, "https://www.linkedin.com/in/shejutikhan/");
         
-        driver.close(); // close Github tab
-        driver.switchTo().window(driver.getWindowHandles().iterator().next()); // return to main tab
+        getDriver().close(); // close Github tab
+        getDriver().switchTo().window(getDriver().getWindowHandles().iterator().next()); // return to main tab
 	}
 	
 	@Test(description = "Verify github page launch")
 	public void testGithubPagelaunch()
 	{
 		// Create HomePage object
-        HomePage homePage = new HomePage(driver);
+        HomePage homePage = new HomePage(getDriver());
         homePage.clickGithub();
         
-        TestUtils.switchToNewTabAndVerifyTitle(driver, "shejutik (Shejuti Khan)", 10);
+        TestUtils.switchToNewTabAndVerifyTitle(getDriver(), "shejutik (Shejuti Khan)", 10);
         
         // Verify correct github page is displayed
-        String currentUrl = driver.getCurrentUrl();
+        String currentUrl = getDriver().getCurrentUrl();
         Assert.assertEquals(currentUrl, "https://github.com/shejutik");
         
-        driver.close(); // close Github tab
-        driver.switchTo().window(driver.getWindowHandles().iterator().next()); // return to main tab
+        getDriver().close(); // close Github tab
+        getDriver().switchTo().window(getDriver().getWindowHandles().iterator().next()); // return to main tab
 	}
 }

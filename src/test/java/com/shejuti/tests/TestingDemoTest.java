@@ -30,20 +30,20 @@ public class TestingDemoTest extends BaseTest {
 	@Test(description = "Verify File Upload")
 	public void testFileUpload() {
 		
-		LoginPage loginPage = new LoginPage(driver);
+		LoginPage loginPage = new LoginPage(getDriver());
 		
 		// Open testing demo page
-        driver.get(testingDemoPageUrl); 
+		getDriver().get(testingDemoPageUrl); 
         loginPage.login(username, password);
 
         // Create TestingDemoPage object
-        TestingDemoPage TestingDemoPage = new TestingDemoPage(driver);
+        TestingDemoPage TestingDemoPage = new TestingDemoPage(getDriver());
         
         TestingDemoPage.inputFileLocation("D:\\Work\\Testing Portfolio_Local\\client\\src\\assets\\sample text file.txt");
         
         By fileUploadSuccessMsgLocator = By.xpath("//p[contains(text(),'uploaded successfully')]");
         
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(5));
+        WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(5));
         wait.until(ExpectedConditions.visibilityOfElementLocated(fileUploadSuccessMsgLocator));
         
         Assert.assertTrue(TestingDemoPage.isFileUploadSuccessMessageDisplayed("sample text file.txt"), "❌ File upload success message not found!");
@@ -52,14 +52,14 @@ public class TestingDemoTest extends BaseTest {
 	@Test(description = "Verify Form Validation")
 	public void testFormValidation() {
 		
-		LoginPage loginPage = new LoginPage(driver);
+		LoginPage loginPage = new LoginPage(getDriver());
 		
 		// Open testing demo page
-        driver.get(testingDemoPageUrl); 
+		getDriver().get(testingDemoPageUrl); 
         loginPage.login(username, password);
 
         // Create TestingDemoPage object
-        TestingDemoPage TestingDemoPage = new TestingDemoPage(driver);
+        TestingDemoPage TestingDemoPage = new TestingDemoPage(getDriver());
         
         TestingDemoPage.performFormValidation("admin", "123");
         Assert.assertTrue(TestingDemoPage.isFormValidationSuccessMessageDisplayed(), "❌ Form validation Success message not found!");
@@ -69,16 +69,16 @@ public class TestingDemoTest extends BaseTest {
 	@Test(description = "Verify Drop Down Selection")
 	public void testDropDownSelection() {
 		
-		LoginPage loginPage = new LoginPage(driver);
+		LoginPage loginPage = new LoginPage(getDriver());
 		
 		// Open testing demo page
-        driver.get(testingDemoPageUrl); 
+		getDriver().get(testingDemoPageUrl); 
         loginPage.login(username, password);
        
         // Create TestingDemoPage object
-        TestingDemoPage TestingDemoPage = new TestingDemoPage(driver);
+        TestingDemoPage TestingDemoPage = new TestingDemoPage(getDriver());
         
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(10));
     	wait.until(ExpectedConditions.visibilityOfElementLocated(
     	    By.cssSelector("div.dropdown-section select")));
     	
@@ -90,14 +90,14 @@ public class TestingDemoTest extends BaseTest {
 	@Test(description = "Verify Dynamic Item Add")
 	public void testDynamicItemAdd() {
 		
-		LoginPage loginPage = new LoginPage(driver);
+		LoginPage loginPage = new LoginPage(getDriver());
 		
 		// Open testing demo page
-        driver.get(testingDemoPageUrl); 
+		getDriver().get(testingDemoPageUrl); 
         loginPage.login(username, password);
        
         // Create TestingDemoPage object
-        TestingDemoPage TestingDemoPage = new TestingDemoPage(driver);
+        TestingDemoPage TestingDemoPage = new TestingDemoPage(getDriver());
     	
         TestingDemoPage.typeItemForDynamicList("Item 4");
         TestingDemoPage.clickAddForDynamicListItem();
@@ -108,16 +108,16 @@ public class TestingDemoTest extends BaseTest {
 	@Test(description = "Verify Dynamic Item Remove")
 	public void testDynamicItemRemove() throws InterruptedException {
 		
-		LoginPage loginPage = new LoginPage(driver);
+		LoginPage loginPage = new LoginPage(getDriver());
 		
 		// Open testing demo page
-        driver.get(testingDemoPageUrl); 
+		getDriver().get(testingDemoPageUrl); 
         loginPage.login(username, password);
        
         // Create TestingDemoPage object
-        TestingDemoPage TestingDemoPage = new TestingDemoPage(driver);
+        TestingDemoPage TestingDemoPage = new TestingDemoPage(getDriver());
         
-        WebDriverWait wait = new WebDriverWait(driver, Duration.ofSeconds(10));
+        WebDriverWait wait = new WebDriverWait(getDriver(), Duration.ofSeconds(10));
         wait.until(ExpectedConditions.presenceOfElementLocated(
             By.xpath("//li[contains(., 'Item 1') and .//button[text()='Remove']]")));
     	
@@ -130,14 +130,14 @@ public class TestingDemoTest extends BaseTest {
 	@Test(description = "Verify Logout from Testing Demo page")
 	public void testLogout(){
 		
-		LoginPage loginPage = new LoginPage(driver);
+		LoginPage loginPage = new LoginPage(getDriver());
 		
 		// Open testing demo page
-        driver.get(testingDemoPageUrl); 
+		getDriver().get(testingDemoPageUrl); 
         loginPage.login(username, password);
        
         // Create TestingDemoPage object
-        TestingDemoPage TestingDemoPage = new TestingDemoPage(driver);
+        TestingDemoPage TestingDemoPage = new TestingDemoPage(getDriver());
         
         TestingDemoPage.clickLogoutButton();
         

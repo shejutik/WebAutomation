@@ -22,7 +22,13 @@ import java.time.Duration;  // For setting implicit wait timeout
 
 public abstract class BaseTest {
 
-    protected WebDriver driver; // WebDriver object that will be shared with all test classes
+	// Thread-local WebDriver for parallel tests
+    private static ThreadLocal<WebDriver> driverThreadLocal = new ThreadLocal<>();
+
+    public WebDriver getDriver() {
+        return driverThreadLocal.get();
+    }
+    //protected WebDriver driver; // WebDriver object that will be shared with all test classes
 
     /**
      * This method runs before each @Test method.
@@ -34,6 +40,7 @@ public abstract class BaseTest {
         // Optional: Set the path to the ChromeDriver manually (uncomment and update if needed)
         // System.setProperty("webdriver.chrome.driver", "path/to/chromedriver");
 
+    	 WebDriver driver;
 	    	switch (browser.toLowerCase()) {
 	        case "chrome":
 	        	WebDriverManager.chromedriver().setup();
@@ -44,12 +51,13 @@ public abstract class BaseTest {
 	            driver = new FirefoxDriver();
 	            break;
 	        case "edge":
-	        	WebDriverManager.edgedriver().setup();
-	            driver = new EdgeDriver();
+	        	System.setProperty("webdriver.edge.driver", "C:\\Drivers\\edgedriver_win64\\msedgedriver.exe");
+	        	driver = new EdgeDriver();
 	            break;
 	        default:
 	            throw new IllegalArgumentException("Browser not supported: " + browser);
 	    }
+	    	System.out.println("✅ Launching browser: " + browser + " on thread: " + Thread.currentThread().getId());
         driver.manage().window().maximize(); // Maximizes the browser window
 
         // Sets a global implicit wait of 10 seconds for all findElement and findElements calls before throwing a NoSuchElementException
@@ -58,6 +66,9 @@ public abstract class BaseTest {
 
         // Loads the locally/remotely hosted testing website (React frontend)
         driver.get(ConfigReader.get("baseUrl"));
+        
+        // Store driver in ThreadLocal
+        driverThreadLocal.set(driver);
     }
 
     /**
@@ -66,8 +77,7 @@ public abstract class BaseTest {
      */
     @AfterMethod
     public void tearDown() {
-        if (driver != null) {
-            driver.quit(); // Properly closes the browser and ends the session
-        }
+    	getDriver().quit();
+        driverThreadLocal.remove();
     }
 }
