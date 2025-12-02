@@ -2,34 +2,34 @@
 <testng-results ignored="0" total="11" passed="11" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2025-12-02T12:00:13 AEDT" name="Portfolio Test Suite" finished-at="2025-12-02T12:00:40 AEDT" duration-ms="27129">
+  <suite started-at="2025-12-02T13:01:35 AEDT" name="Portfolio Test Suite" finished-at="2025-12-02T13:02:02 AEDT" duration-ms="27813">
     <groups>
     </groups>
-    <test started-at="2025-12-02T12:00:13 AEDT" name="Login Tests - Firefox" finished-at="2025-12-02T12:00:13 AEDT" duration-ms="9">
-    </test> <!-- Login Tests - Firefox -->
-    <test started-at="2025-12-02T12:00:13 AEDT" name="Login Tests - Edge" finished-at="2025-12-02T12:00:13 AEDT" duration-ms="9">
+    <test started-at="2025-12-02T13:01:35 AEDT" name="Login Tests - Edge" finished-at="2025-12-02T13:01:35 AEDT" duration-ms="27">
     </test> <!-- Login Tests - Edge -->
-    <test started-at="2025-12-02T12:00:13 AEDT" name="Home Tests - Firefox" finished-at="2025-12-02T12:00:13 AEDT" duration-ms="0">
+    <test started-at="2025-12-02T13:01:35 AEDT" name="Login Tests - Firefox" finished-at="2025-12-02T13:01:35 AEDT" duration-ms="27">
+    </test> <!-- Login Tests - Firefox -->
+    <test started-at="2025-12-02T13:01:35 AEDT" name="Home Tests - Firefox" finished-at="2025-12-02T13:01:35 AEDT" duration-ms="0">
     </test> <!-- Home Tests - Firefox -->
-    <test started-at="2025-12-02T12:00:13 AEDT" name="Home Tests - Chrome" finished-at="2025-12-02T12:00:13 AEDT" duration-ms="0">
+    <test started-at="2025-12-02T13:01:35 AEDT" name="Home Tests - Chrome" finished-at="2025-12-02T13:01:35 AEDT" duration-ms="0">
     </test> <!-- Home Tests - Chrome -->
-    <test started-at="2025-12-02T12:00:13 AEDT" name="Home Tests - Edge" finished-at="2025-12-02T12:00:13 AEDT" duration-ms="0">
+    <test started-at="2025-12-02T13:01:35 AEDT" name="Home Tests - Edge" finished-at="2025-12-02T13:01:35 AEDT" duration-ms="0">
     </test> <!-- Home Tests - Edge -->
-    <test started-at="2025-12-02T12:00:13 AEDT" name="Contact Tests - Chrome" finished-at="2025-12-02T12:00:13 AEDT" duration-ms="0">
+    <test started-at="2025-12-02T13:01:35 AEDT" name="Contact Tests - Chrome" finished-at="2025-12-02T13:01:35 AEDT" duration-ms="0">
     </test> <!-- Contact Tests - Chrome -->
-    <test started-at="2025-12-02T12:00:13 AEDT" name="Contact Tests - Firefox" finished-at="2025-12-02T12:00:13 AEDT" duration-ms="0">
+    <test started-at="2025-12-02T13:01:35 AEDT" name="Contact Tests - Firefox" finished-at="2025-12-02T13:01:35 AEDT" duration-ms="0">
     </test> <!-- Contact Tests - Firefox -->
-    <test started-at="2025-12-02T12:00:13 AEDT" name="Contact Tests - Edge" finished-at="2025-12-02T12:00:13 AEDT" duration-ms="0">
+    <test started-at="2025-12-02T13:01:35 AEDT" name="Contact Tests - Edge" finished-at="2025-12-02T13:01:35 AEDT" duration-ms="0">
     </test> <!-- Contact Tests - Edge -->
-    <test started-at="2025-12-02T12:00:13 AEDT" name="Testing Demo Tests - Chrome" finished-at="2025-12-02T12:00:13 AEDT" duration-ms="0">
+    <test started-at="2025-12-02T13:01:35 AEDT" name="Testing Demo Tests - Chrome" finished-at="2025-12-02T13:01:35 AEDT" duration-ms="0">
     </test> <!-- Testing Demo Tests - Chrome -->
-    <test started-at="2025-12-02T12:00:13 AEDT" name="Testing Demo Tests - Firefox" finished-at="2025-12-02T12:00:13 AEDT" duration-ms="0">
+    <test started-at="2025-12-02T13:01:35 AEDT" name="Testing Demo Tests - Firefox" finished-at="2025-12-02T13:01:35 AEDT" duration-ms="0">
     </test> <!-- Testing Demo Tests - Firefox -->
-    <test started-at="2025-12-02T12:00:13 AEDT" name="Testing Demo Tests - Edge" finished-at="2025-12-02T12:00:13 AEDT" duration-ms="0">
+    <test started-at="2025-12-02T13:01:35 AEDT" name="Testing Demo Tests - Edge" finished-at="2025-12-02T13:01:35 AEDT" duration-ms="0">
     </test> <!-- Testing Demo Tests - Edge -->
-    <test started-at="2025-12-02T12:00:13 AEDT" name="Login Tests - Chrome" finished-at="2025-12-02T12:00:40 AEDT" duration-ms="27129">
+    <test started-at="2025-12-02T13:01:35 AEDT" name="Login Tests - Chrome" finished-at="2025-12-02T13:02:02 AEDT" duration-ms="27813">
       <class name="com.shejuti.tests.LoginTest">
-        <test-method is-config="true" signature="setUpDriver(java.lang.String)[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T12:00:13 AEDT" name="setUpDriver" finished-at="2025-12-02T12:00:18 AEDT" duration-ms="4746" status="PASS">
+        <test-method is-config="true" signature="setUpDriver(java.lang.String)[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T13:01:35 AEDT" name="setUpDriver" finished-at="2025-12-02T13:01:40 AEDT" duration-ms="5051" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -40,15 +40,15 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpDriver -->
-        <test-method signature="testAdminAndPasswordBothMandatoryForLogin()[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T12:00:18 AEDT" name="testAdminAndPasswordBothMandatoryForLogin" description="Verify empty login credentials shows prompt message" finished-at="2025-12-02T12:00:19 AEDT" duration-ms="924" status="PASS">
+        <test-method signature="testAdminAndPasswordBothMandatoryForLogin()[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T13:01:40 AEDT" name="testAdminAndPasswordBothMandatoryForLogin" description="Verify empty login credentials shows prompt message" finished-at="2025-12-02T13:01:41 AEDT" duration-ms="998" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testAdminAndPasswordBothMandatoryForLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T12:00:19 AEDT" name="tearDown" finished-at="2025-12-02T12:00:19 AEDT" duration-ms="200" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T13:01:41 AEDT" name="tearDown" finished-at="2025-12-02T13:01:41 AEDT" duration-ms="208" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUpDriver(java.lang.String)[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T12:00:19 AEDT" name="setUpDriver" finished-at="2025-12-02T12:00:20 AEDT" duration-ms="1360" status="PASS">
+        <test-method is-config="true" signature="setUpDriver(java.lang.String)[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T13:01:41 AEDT" name="setUpDriver" finished-at="2025-12-02T13:01:42 AEDT" duration-ms="1074" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -59,7 +59,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpDriver -->
-        <test-method signature="testInvalidLoginShowsErrorMessage(java.lang.String,java.lang.String)[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T12:00:20 AEDT" name="testInvalidLoginShowsErrorMessage" description="Verify invalid login credentials shows error message" data-provider="loginData" finished-at="2025-12-02T12:00:21 AEDT" duration-ms="870" status="PASS">
+        <test-method signature="testInvalidLoginShowsErrorMessage(java.lang.String,java.lang.String)[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T13:01:42 AEDT" name="testInvalidLoginShowsErrorMessage" description="Verify invalid login credentials shows error message" data-provider="loginData" finished-at="2025-12-02T13:01:43 AEDT" duration-ms="810" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -75,11 +75,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInvalidLoginShowsErrorMessage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T12:00:21 AEDT" name="tearDown" finished-at="2025-12-02T12:00:22 AEDT" duration-ms="196" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T13:01:43 AEDT" name="tearDown" finished-at="2025-12-02T13:01:43 AEDT" duration-ms="159" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUpDriver(java.lang.String)[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T12:00:22 AEDT" name="setUpDriver" finished-at="2025-12-02T12:00:23 AEDT" duration-ms="1154" status="PASS">
+        <test-method is-config="true" signature="setUpDriver(java.lang.String)[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T13:01:43 AEDT" name="setUpDriver" finished-at="2025-12-02T13:01:44 AEDT" duration-ms="978" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -90,7 +90,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpDriver -->
-        <test-method signature="testInvalidLoginShowsErrorMessage(java.lang.String,java.lang.String)[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T12:00:23 AEDT" name="testInvalidLoginShowsErrorMessage" description="Verify invalid login credentials shows error message" data-provider="loginData" finished-at="2025-12-02T12:00:23 AEDT" duration-ms="707" status="PASS">
+        <test-method signature="testInvalidLoginShowsErrorMessage(java.lang.String,java.lang.String)[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T13:01:44 AEDT" name="testInvalidLoginShowsErrorMessage" description="Verify invalid login credentials shows error message" data-provider="loginData" finished-at="2025-12-02T13:01:45 AEDT" duration-ms="856" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -106,11 +106,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInvalidLoginShowsErrorMessage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T12:00:23 AEDT" name="tearDown" finished-at="2025-12-02T12:00:24 AEDT" duration-ms="188" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T13:01:45 AEDT" name="tearDown" finished-at="2025-12-02T13:01:45 AEDT" duration-ms="189" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUpDriver(java.lang.String)[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T12:00:24 AEDT" name="setUpDriver" finished-at="2025-12-02T12:00:25 AEDT" duration-ms="1023" status="PASS">
+        <test-method is-config="true" signature="setUpDriver(java.lang.String)[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T13:01:45 AEDT" name="setUpDriver" finished-at="2025-12-02T13:01:46 AEDT" duration-ms="979" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -121,7 +121,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpDriver -->
-        <test-method signature="testInvalidLoginShowsErrorMessage(java.lang.String,java.lang.String)[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T12:00:25 AEDT" name="testInvalidLoginShowsErrorMessage" description="Verify invalid login credentials shows error message" data-provider="loginData" finished-at="2025-12-02T12:00:25 AEDT" duration-ms="658" status="PASS">
+        <test-method signature="testInvalidLoginShowsErrorMessage(java.lang.String,java.lang.String)[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T13:01:46 AEDT" name="testInvalidLoginShowsErrorMessage" description="Verify invalid login credentials shows error message" data-provider="loginData" finished-at="2025-12-02T13:01:47 AEDT" duration-ms="1097" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -137,11 +137,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInvalidLoginShowsErrorMessage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T12:00:25 AEDT" name="tearDown" finished-at="2025-12-02T12:00:26 AEDT" duration-ms="214" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T13:01:47 AEDT" name="tearDown" finished-at="2025-12-02T13:01:47 AEDT" duration-ms="207" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUpDriver(java.lang.String)[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T12:00:26 AEDT" name="setUpDriver" finished-at="2025-12-02T12:00:27 AEDT" duration-ms="1353" status="PASS">
+        <test-method is-config="true" signature="setUpDriver(java.lang.String)[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T13:01:47 AEDT" name="setUpDriver" finished-at="2025-12-02T13:01:48 AEDT" duration-ms="1043" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -152,7 +152,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpDriver -->
-        <test-method signature="testInvalidLoginShowsErrorMessage(java.lang.String,java.lang.String)[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T12:00:27 AEDT" name="testInvalidLoginShowsErrorMessage" description="Verify invalid login credentials shows error message" data-provider="loginData" finished-at="2025-12-02T12:00:28 AEDT" duration-ms="834" status="PASS">
+        <test-method signature="testInvalidLoginShowsErrorMessage(java.lang.String,java.lang.String)[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T13:01:48 AEDT" name="testInvalidLoginShowsErrorMessage" description="Verify invalid login credentials shows error message" data-provider="loginData" finished-at="2025-12-02T13:01:49 AEDT" duration-ms="683" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -168,11 +168,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInvalidLoginShowsErrorMessage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T12:00:28 AEDT" name="tearDown" finished-at="2025-12-02T12:00:28 AEDT" duration-ms="160" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T13:01:49 AEDT" name="tearDown" finished-at="2025-12-02T13:01:49 AEDT" duration-ms="185" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUpDriver(java.lang.String)[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T12:00:28 AEDT" name="setUpDriver" finished-at="2025-12-02T12:00:29 AEDT" duration-ms="961" status="PASS">
+        <test-method is-config="true" signature="setUpDriver(java.lang.String)[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T13:01:49 AEDT" name="setUpDriver" finished-at="2025-12-02T13:01:51 AEDT" duration-ms="1295" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -183,7 +183,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpDriver -->
-        <test-method signature="testInvalidLoginShowsErrorMessage(java.lang.String,java.lang.String)[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T12:00:29 AEDT" name="testInvalidLoginShowsErrorMessage" description="Verify invalid login credentials shows error message" data-provider="loginData" finished-at="2025-12-02T12:00:29 AEDT" duration-ms="632" status="PASS">
+        <test-method signature="testInvalidLoginShowsErrorMessage(java.lang.String,java.lang.String)[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T13:01:51 AEDT" name="testInvalidLoginShowsErrorMessage" description="Verify invalid login credentials shows error message" data-provider="loginData" finished-at="2025-12-02T13:01:51 AEDT" duration-ms="795" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -199,11 +199,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInvalidLoginShowsErrorMessage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T12:00:29 AEDT" name="tearDown" finished-at="2025-12-02T12:00:30 AEDT" duration-ms="362" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T13:01:51 AEDT" name="tearDown" finished-at="2025-12-02T13:01:52 AEDT" duration-ms="455" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUpDriver(java.lang.String)[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T12:00:30 AEDT" name="setUpDriver" finished-at="2025-12-02T12:00:31 AEDT" duration-ms="967" status="PASS">
+        <test-method is-config="true" signature="setUpDriver(java.lang.String)[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T13:01:52 AEDT" name="setUpDriver" finished-at="2025-12-02T13:01:53 AEDT" duration-ms="1038" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -214,7 +214,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpDriver -->
-        <test-method signature="testInvalidLoginShowsErrorMessage(java.lang.String,java.lang.String)[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T12:00:31 AEDT" name="testInvalidLoginShowsErrorMessage" description="Verify invalid login credentials shows error message" data-provider="loginData" finished-at="2025-12-02T12:00:31 AEDT" duration-ms="580" status="PASS">
+        <test-method signature="testInvalidLoginShowsErrorMessage(java.lang.String,java.lang.String)[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T13:01:53 AEDT" name="testInvalidLoginShowsErrorMessage" description="Verify invalid login credentials shows error message" data-provider="loginData" finished-at="2025-12-02T13:01:54 AEDT" duration-ms="708" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -230,11 +230,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInvalidLoginShowsErrorMessage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T12:00:31 AEDT" name="tearDown" finished-at="2025-12-02T12:00:32 AEDT" duration-ms="247" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T13:01:54 AEDT" name="tearDown" finished-at="2025-12-02T13:01:54 AEDT" duration-ms="187" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUpDriver(java.lang.String)[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T12:00:32 AEDT" name="setUpDriver" finished-at="2025-12-02T12:00:33 AEDT" duration-ms="960" status="PASS">
+        <test-method is-config="true" signature="setUpDriver(java.lang.String)[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T13:01:54 AEDT" name="setUpDriver" finished-at="2025-12-02T13:01:55 AEDT" duration-ms="936" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -245,7 +245,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpDriver -->
-        <test-method signature="testInvalidLoginShowsErrorMessage(java.lang.String,java.lang.String)[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T12:00:33 AEDT" name="testInvalidLoginShowsErrorMessage" description="Verify invalid login credentials shows error message" data-provider="loginData" finished-at="2025-12-02T12:00:33 AEDT" duration-ms="788" status="PASS">
+        <test-method signature="testInvalidLoginShowsErrorMessage(java.lang.String,java.lang.String)[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T13:01:55 AEDT" name="testInvalidLoginShowsErrorMessage" description="Verify invalid login credentials shows error message" data-provider="loginData" finished-at="2025-12-02T13:01:56 AEDT" duration-ms="816" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -261,11 +261,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInvalidLoginShowsErrorMessage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T12:00:33 AEDT" name="tearDown" finished-at="2025-12-02T12:00:34 AEDT" duration-ms="170" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T13:01:56 AEDT" name="tearDown" finished-at="2025-12-02T13:01:56 AEDT" duration-ms="393" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUpDriver(java.lang.String)[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T12:00:34 AEDT" name="setUpDriver" finished-at="2025-12-02T12:00:35 AEDT" duration-ms="992" status="PASS">
+        <test-method is-config="true" signature="setUpDriver(java.lang.String)[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T13:01:56 AEDT" name="setUpDriver" finished-at="2025-12-02T13:01:57 AEDT" duration-ms="936" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -276,7 +276,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpDriver -->
-        <test-method signature="testInvalidLoginShowsErrorMessage(java.lang.String,java.lang.String)[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T12:00:35 AEDT" name="testInvalidLoginShowsErrorMessage" description="Verify invalid login credentials shows error message" data-provider="loginData" finished-at="2025-12-02T12:00:35 AEDT" duration-ms="972" status="PASS">
+        <test-method signature="testInvalidLoginShowsErrorMessage(java.lang.String,java.lang.String)[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T13:01:57 AEDT" name="testInvalidLoginShowsErrorMessage" description="Verify invalid login credentials shows error message" data-provider="loginData" finished-at="2025-12-02T13:01:57 AEDT" duration-ms="641" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -292,11 +292,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInvalidLoginShowsErrorMessage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T12:00:35 AEDT" name="tearDown" finished-at="2025-12-02T12:00:36 AEDT" duration-ms="203" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T13:01:57 AEDT" name="tearDown" finished-at="2025-12-02T13:01:58 AEDT" duration-ms="206" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUpDriver(java.lang.String)[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T12:00:36 AEDT" name="setUpDriver" finished-at="2025-12-02T12:00:37 AEDT" duration-ms="1321" status="PASS">
+        <test-method is-config="true" signature="setUpDriver(java.lang.String)[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T13:01:58 AEDT" name="setUpDriver" finished-at="2025-12-02T13:01:59 AEDT" duration-ms="1324" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -307,7 +307,7 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpDriver -->
-        <test-method signature="testInvalidLoginShowsErrorMessage(java.lang.String,java.lang.String)[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T12:00:37 AEDT" name="testInvalidLoginShowsErrorMessage" description="Verify invalid login credentials shows error message" data-provider="loginData" finished-at="2025-12-02T12:00:38 AEDT" duration-ms="847" status="PASS">
+        <test-method signature="testInvalidLoginShowsErrorMessage(java.lang.String,java.lang.String)[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T13:01:59 AEDT" name="testInvalidLoginShowsErrorMessage" description="Verify invalid login credentials shows error message" data-provider="loginData" finished-at="2025-12-02T13:02:00 AEDT" duration-ms="762" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -323,11 +323,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testInvalidLoginShowsErrorMessage -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T12:00:38 AEDT" name="tearDown" finished-at="2025-12-02T12:00:38 AEDT" duration-ms="234" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T13:02:00 AEDT" name="tearDown" finished-at="2025-12-02T13:02:00 AEDT" duration-ms="190" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-        <test-method is-config="true" signature="setUpDriver(java.lang.String)[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T12:00:38 AEDT" name="setUpDriver" finished-at="2025-12-02T12:00:39 AEDT" duration-ms="1242" status="PASS">
+        <test-method is-config="true" signature="setUpDriver(java.lang.String)[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T13:02:00 AEDT" name="setUpDriver" finished-at="2025-12-02T13:02:01 AEDT" duration-ms="1294" status="PASS">
           <params>
             <param index="0">
               <value>
@@ -338,11 +338,11 @@
           <reporter-output>
           </reporter-output>
         </test-method> <!-- setUpDriver -->
-        <test-method signature="testValidLogin()[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T12:00:39 AEDT" name="testValidLogin" description="Verify valid login credentials logs into the system" finished-at="2025-12-02T12:00:40 AEDT" duration-ms="813" status="PASS">
+        <test-method signature="testValidLogin()[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T13:02:01 AEDT" name="testValidLogin" description="Verify valid login credentials logs into the system" finished-at="2025-12-02T13:02:02 AEDT" duration-ms="1028" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- testValidLogin -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T12:00:40 AEDT" name="tearDown" finished-at="2025-12-02T12:00:40 AEDT" duration-ms="168" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.shejuti.tests.LoginTest@158d2680]" started-at="2025-12-02T13:02:02 AEDT" name="tearDown" finished-at="2025-12-02T13:02:02 AEDT" duration-ms="183" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
