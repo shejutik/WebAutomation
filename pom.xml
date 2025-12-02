@@ -56,8 +56,11 @@
       <version>3.2.5</version>
       <configuration>
         <suiteXmlFiles>
-          <suiteXmlFile>${suiteXmlFile}</suiteXmlFile>
+          <suiteXmlFile>src/test/resources/master-testng.xml</suiteXmlFile>
         </suiteXmlFiles>
+        <systemPropertyVariables>
+          <env>${env}</env>
+        </systemPropertyVariables>
       </configuration>
     </plugin>
   </plugins>

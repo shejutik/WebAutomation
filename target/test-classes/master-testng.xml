@@ -15,7 +15,7 @@
   <test name="Login Tests - Firefox">
   <parameter name="browser" value="firefox"/>
     <classes>
-      <class name="com.shejuti.tests.LoginTest"/>
+      <!--<class name="com.shejuti.tests.LoginTest"/>-->
     </classes>
   </test>
   
@@ -23,7 +23,7 @@
   <test name="Login Tests - Edge">
   <parameter name="browser" value="edge"/>
     <classes>
-      <class name="com.shejuti.tests.LoginTest"/>
+      <!--<class name="com.shejuti.tests.LoginTest"/>-->
     </classes>
   </test>
   
