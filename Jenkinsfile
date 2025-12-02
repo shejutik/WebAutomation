@@ -7,8 +7,9 @@ pipeline {
     }
 
     environment {
-        // Point your tests to the deployed portfolio site
-        BASE_URL = 'https://your-portfolio-domain.com'   // <-- change this
+        // logical environment + URL of deployed portfolio site
+        ENV      = 'prod'
+        BASE_URL = 'https://shejutikhan.com'
     }
 
     stages {
@@ -23,10 +24,10 @@ pipeline {
         stage('Run Maven TestNG Suite') {
             steps {
                 echo "Running automated tests with Maven & TestNG..."
-                // If your framework reads baseUrl from a system property, use this:
-                sh 'mvn clean test -DbaseUrl=${BASE_URL}'
-                // If not, simple:
-                // sh 'mvn clean test'
+                // Use the same command as on your laptop, plus baseUrl if you want
+                sh "mvn clean test -Denv=${ENV} -DbaseUrl=${BASE_URL}"
+                // If you do not yet read baseUrl in your framework, this is still safe;
+                // your code will just ignore it.
             }
         }
 
@@ -34,11 +35,9 @@ pipeline {
             steps {
                 echo "Publishing test reports..."
 
-                // JUnit-style XML (Surefire / TestNG via surefire)
                 junit allowEmptyResults: true,
                       testResults: 'target/surefire-reports/*.xml'
 
-                // Optional: archive the full report folder
                 archiveArtifacts artifacts: 'target/surefire-reports/**',
                                   fingerprint: true
             }
@@ -47,13 +46,13 @@ pipeline {
 
     post {
         success {
-            echo "✅ Automation tests PASSED."
+            echo '✅ Automation tests PASSED.'
         }
         unstable {
-            echo "⚠️ Tests are UNSTABLE (some failed or flaky). Check the report."
+            echo '⚠️ Tests are UNSTABLE (some failed or flaky). Check the report.'
         }
         failure {
-            echo "❌ Automation tests FAILED. Investigate failures in the report."
+            echo '❌ Automation tests FAILED. Investigate failures in the report.'
         }
     }
 }
